@@ -25,6 +25,9 @@ return items.map(({preview, original, description}) => {
 }
 
 function onImgItemClick(evt) {
+    if (!evt.target.classList.contains('.gallery-item')) {
+        return;
+    }
     evt.preventDefault();
     const bigImg = evt.target.dataset.source;
     const modalImgMarkup = basicLightbox.create(`
