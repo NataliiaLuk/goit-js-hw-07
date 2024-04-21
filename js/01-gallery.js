@@ -25,7 +25,7 @@ return items.map(({preview, original, description}) => {
 }
 
 function onImgItemClick(evt) {
-    if (!evt.target.classList.contains('.gallery-item')) {
+    if (!evt.target.classList.contains('.gallery-link')) {
         return;
     }
     evt.preventDefault();
