@@ -30,6 +30,7 @@ function onImgItemClick(evt) {
     }
     evt.preventDefault();
     const bigImg = evt.target.dataset.source;
+      if (!datasetSource) return;
     const modalImgMarkup = basicLightbox.create(`
     <div class="modal">
          <img src="${bigImg}" width="800" height="600">
