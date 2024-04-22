@@ -25,12 +25,12 @@ return items.map(({preview, original, description}) => {
 }
 
 function onImgItemClick(evt) {
-    if (!evt.target.classList.contains('.gallery-link')) {
+    if (!evt.target.classList.contains('.gallery-item')) {
         return;
     }
     evt.preventDefault();
     const bigImg = evt.target.dataset.source;
-      if (!datasetSource) return;
+      if (!bigImg) return;
     const modalImgMarkup = basicLightbox.create(`
     <div class="modal">
          <img src="${bigImg}" width="800" height="600">
