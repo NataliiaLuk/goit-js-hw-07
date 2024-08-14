@@ -25,7 +25,7 @@ return items.map(({preview, original, description}) => {
 }
 
 function onImgItemClick(evt) {
-    console.log(evt, '====');
+
     if (!evt.target.classList.contains('.gallery__item')) {
         return;
     }
